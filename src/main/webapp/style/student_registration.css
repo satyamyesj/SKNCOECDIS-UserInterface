@@ -1,0 +1,85 @@
+:root{
+    --element-color:#8338D1;        /*[131,56,209]*/
+    --selection-color:#CBC0EB;      /*[203,192,235]*/
+    --background-color:#EBE8F7;     /*[235,232,247]*/
+    --border-color: #836AD1;        /*[131,106,209]*/
+
+}
+
+#student_registration_form_alert{
+    /*display:none;*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    z-index: 1;
+}
+
+#student_registration_form_frame{
+    max-width:600px;
+    margin:30px auto;
+
+    border: 1px solid rgb(131,106,209,0.4);
+    border-right-color: rgb(131,106,209,0.6);
+    border-bottom-color: rgb(131,106,209,0.6);
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px var(--background-color);
+    padding: 20px 30px 5px 30px;
+}
+
+h1{
+    color: var(--element-color);
+    font-family: Century Gothic; 
+    font-weight: bold;
+}
+
+small{
+    color: var(--element-color);
+    font-family: Century Gothic; 
+}
+
+#student_registration_form{
+    margin-top: 20px;
+}
+/* Input field styling*/
+
+
+#student_registration_form input, #student_registration_form button, #student_registration_form select, #student_registration_form textarea{
+    color: var(--element-color);
+    font-family: Century Gothic;
+    border:  2px solid var(--border-color);
+    margin-bottom: 5px;
+}
+
+#student_registration_form input:hover, #student_registration_form button:hover,#student_registration_form select:hover, #student_registration_form textarea:hover{
+    background-color: rgb(203,192,235,0.4);;
+    border:  2px solid var(--border-color);
+}
+
+#student_registration_form input:focus, #student_registration_form button:focus,#student_registration_form select:focus, #student_registration_form textarea:focus{
+    box-shadow: none;
+}
+
+#student_registration_form input::placeholder,#student_registration_form textarea::placeholder  { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--element-color);
+    opacity: 1; /* Firefox */
+}
+
+#student_registration_form input:-ms-input-placeholder,#student_registration_form textarea:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+    color: var(--element-color);
+}
+
+#student_registration_form input::-ms-input-placeholder ,#student_registration_form textarea::-ms-input-placeholder{ /* Microsoft Edge */
+    color: var(--element-color);
+}
+
+#show_password_field{
+    padding-top: 5px;
+
+}
+
+#show_password_icon{
+    color:var(--element-color);
+}
+
+
+

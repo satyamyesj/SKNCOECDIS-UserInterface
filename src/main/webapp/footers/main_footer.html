@@ -1,0 +1,38 @@
+</body>
+</html>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+    var servletAlertTimeout = 5000;
+    var requestURI = "<%= request.getRequestURI()%>";
+   
+    if (requestURI.includes("home.jsp")) {
+        document.getElementById("nav-link-home").style.setProperty("background-color", "#CBC0EB");
+    } else if (requestURI.includes("upload_library_content.jsp")) {
+        document.getElementById("nav-link-upload").style.setProperty("background-color", "#CBC0EB");
+    }  else if (requestURI.includes("about.jsp")) {
+        document.getElementById("nav-link-about").style.setProperty("background-color", "#CBC0EB");
+    } else if (requestURI.includes("index.jsp") || requestURI.endsWith("skncoecdis.edu/")) {
+        document.getElementById("main-navbar").style.setProperty("display", "none");
+    } else if (requestURI.includes("student_registration.jsp")) {
+        document.getElementById("main-navbar").style.setProperty("display", "none");
+    } else if (requestURI.includes("employee_registration.jsp")) {
+        document.getElementById("main-navbar").style.setProperty("display", "none");
+    }
+
+    if (document.getElementById("servlet_error_alert") !== null) {
+        setTimeout(function () {
+            //document.getElementById("servlet_error_alert").style.setProperty("display", "none");
+            $('#servlet_error_alert').slideToggle();
+        }, servletAlertTimeout);
+    }
+
+    if (document.getElementById("servlet_message_alert") !== null) {
+        setTimeout(function () {
+            //document.getElementById("servlet_message_alert").style.setProperty("display", "none");
+            $('#servlet_message_alert').slideToggle();
+        }, servletAlertTimeout);
+    }
+</script>

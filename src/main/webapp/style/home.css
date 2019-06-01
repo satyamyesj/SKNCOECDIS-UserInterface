@@ -1,0 +1,293 @@
+:root{
+    --element-color:#8338D1;        /*[131,56,209]*/
+    --selection-color:#CBC0EB;      /*[203,192,235]*/
+    --background-color:#EBE8F7;     /*[235,232,247]*/
+    --border-color: #836AD1;        /*[131,106,209]*/
+}
+
+#home_body_frame{
+    margin-top: 30px;
+}
+
+#rest-body-col-3{
+    padding: 3px;
+    margin:0;
+}
+
+#rest-body-col-9{
+    padding: 3px;
+    margin:0;
+}
+
+#get_library_content_list_form_alert{
+    /*    display:none;
+        position: -webkit-sticky;
+        position:sticky;
+        top: 0;
+        z-index: 1*/
+    margin-bottom: 40px;
+}
+
+#get_book_title_list_form_alert{
+    /*    display:none;
+        position: -webkit-sticky;
+        position:sticky;
+        top: 0;
+        z-index: 1*/
+    margin-bottom: 40px;
+}
+
+#get_report_title_list_form_alert{
+    /*    display:none;
+        position: -webkit-sticky;
+        position:sticky;
+        top: 0;
+        z-index: 1*/
+    margin-bottom: 40px;
+}
+
+
+
+#search_navigation{
+    background-color: var(--border-color);
+    color: #fff;
+}
+
+.list-group-item {
+    border:1px solid var(--border-color) !important;
+    color: var(--element-color);
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+
+.badge{
+    background-color: var(--border-color) !important;
+    color: #fff;
+}
+
+.list-group-item:hover {
+    color: var(--element-color);
+    background-color: rgb(203,192,235,0.4);
+}
+
+#get_library_content_list_form_username{
+    display: none;
+}
+
+
+/*Input field styling*/
+#get_library_content_list_form_exam_pattern, #get_library_content_list_form_content_type{
+    width:201px;
+
+}
+
+#get_book_title_list_form_book_domain, #get_book_title_list_form_subject_abbreviation{
+    width:201px;
+}
+
+#library_content_search input,#library_content_search select, #library_content_search button{
+    color: var(--element-color);
+    font-family: Century Gothic;
+    border:  2px solid var(--border-color);
+}
+
+#library_content_search input:hover,#library_content_search select:hover, #library_content_search button:hover{
+    background-color: rgb(203,192,235,0.4);
+    border:  2px solid var(--border-color);
+}
+
+#library_content_search input:focus,#library_content_search select:focus, #library_content_search button:focus{
+    box-shadow: none;
+}
+
+#library_content_search input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--element-color);
+    opacity: 1; /* Firefox */
+}
+
+#library_content_search input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--element-color);
+}
+
+#library_content_search input::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--element-color);
+}
+
+#book_search input,#book_search button{
+    color: var(--element-color);
+    font-family: Century Gothic;
+    border:  2px solid var(--border-color);
+}
+
+#book_search input:hover,#book_search button:hover{
+    background-color: rgb(203,192,235,0.4);;
+    border:  2px solid var(--border-color);
+}
+
+#book_search input:focus,#book_search button:focus{
+    box-shadow: none;
+}
+
+#book_search input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--element-color);
+    opacity: 1; /* Firefox */
+}
+
+#book_search input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--element-color);
+}
+
+#book_search input::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--element-color);
+}
+
+#report_search input,#report_search button{
+    color: var(--element-color);
+    font-family: Century Gothic;
+    border:  2px solid var(--border-color);
+}
+
+#report_search input:hover,#report_search button:hover{
+    background-color: rgb(203,192,235,0.4);
+    border:  2px solid var(--border-color);
+}
+
+#report_search input:focus,#report_search button:focus{
+    box-shadow: none;
+}
+
+#report_search input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--element-color);
+    opacity: 1; /* Firefox */
+}
+
+#report_search input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--element-color);
+}
+
+#report_search input::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--element-color);
+}
+
+/*Table styling*/
+#library_content_query_result_table .table-header, #book_search_query_result_table .table-header, #report_search_query_result_table .table-header{
+    background-color: var(--border-color);
+    color: #fff;
+    font-family: Century Gothic;
+    font-size: 18px;
+    border:none;
+}
+
+#library_content_query_result_table .table-data, #book_search_query_result_table .table-data, #report_search_query_result_table .table-data{
+    background-color: var(--background-color);
+    color: var(--element-color);
+    font-family: Century Gothic;
+    font-size: 18px;
+    border-bottom:1px solid var(--border-color);
+}
+
+#library_content_query_result_table .table-data a{
+    color: var(--element-color);
+}
+
+.card {
+    width:98%;
+    border: 1px solid var(--border-color);
+    box-shadow: 8px 8px 5px var(--selection-color);
+    margin-bottom: 30px;
+}
+.card .card-header{
+    border: none;
+    background-color:var(--border-color);
+    color: #fff;
+}
+
+.card .card-body{
+    color: var(--element-color);
+}
+
+@media (max-width:576px){
+    #library_content_search_form {
+        display: inline-block;
+        width: 100%;
+    }
+
+    /*overrding width*/
+    #library_content_search_form select{
+        width: 100%;
+    }
+
+    #library_content_search_form button:after{
+        content: ' search';
+    }
+
+    #book_search_form {
+        display: inline-block;
+        width: 100%;
+    }
+
+    /*overrding width*/
+    #book_search_form input{
+        width: 100%;
+    }
+
+    #book_search_form button:after{
+        content: ' search';
+    }
+
+    #report_search_form {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #report_search_form button:after{
+        content: ' search';
+    }
+
+    #library_content_query_result_table{
+        width: 100%;
+    }
+
+    #library_content_query_result_table .hidable{
+        display: none;
+    }
+
+    #library_content_query_result_table .resizable_title{
+        max-width: 120px;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+    }
+
+    #book_search_query_result_table{
+        width:100% ;
+    }
+
+    #book_search_query_result_table .hidable{
+        display: none;
+    }
+
+    #book_search_query_result_table .resizable_title{
+        max-width: 120px;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+    }
+
+    #report_search_query_result_table{
+        width: 100%;
+    }
+
+    #report_search_query_result_table .hidable{
+        display: none;
+    }
+
+    #report_search_query_result_table .resizable_title{
+        max-width: 120px;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+    }
+
+}
+

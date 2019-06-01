@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SKNCOECDIS</title>
+        <!-- Icons links -->
+        <link rel="shortcut icon" href="favicon.ico" />
+              
+              <link href="fontawesome/css/all.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="style/navbar.css" rel="stylesheet">
+        <link href="style/rest-body.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- navigation bar -->
+            <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand"><img src="Icons/Block/SKNCOECDIS-Block 96px.png"  height="30" width="30">  SKNCOECDIS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li  id="nav-link-home" class="nav-item" >
+                            <a   class="nav-link" href="home.jsp"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <c:if test="${user.user_role=='E'}">
+                            <li id="nav-link-upload" class="nav-item" >
+                                <a class="nav-link" href="get_library_content_upload_info"><i class="fas fa-cloud-upload-alt"></i> Upload </a>
+                            </li>
+                        </c:if>
+                        <li id="nav-link-about" class="nav-item">
+                            <a class="nav-link" href="about.jsp"><i class="fas fa-id-badge"></i> About </a>
+                        </li>
+                    </ul>
+                    <c:if test="${user!=null}">
+                        <label id="navbar-welcome-label"class="my-2 my-lg-0"> <c:out value="Welcome, ${user.username}"></c:out></label>
+                    </c:if>
+                    <c:if test="${user!=null}">
+                        <form class="form-inline my-2 my-lg-0" action="get_user_profile" method="POST">
+                            <button id="update_profile_form_submit" class="btn btn-link my-2 my-sm-0" type="submit" name="submit" value="Edit Profile"><i class="fas fa-user-edit"></i> Edit Profile</button>
+                        </form>
+                    </c:if>
+                    <c:if test="${user!=null}">
+                        <form class="form-inline my-2 my-lg-0" action="terminate_session" method="POST">
+                            <button id="logout_form_submit" class="btn btn-link my-2 my-sm-0" type="submit" name="submit" value="Logout"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                        </form>
+                    </c:if>
+                </div>
+            </nav>
+        </header>

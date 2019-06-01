@@ -1,0 +1,95 @@
+:root{
+    --element-color:#8338D1;        /*[131,56,209]*/
+    --selection-color:#CBC0EB;      /*[203,192,235]*/
+    --background-color:#EBE8F7;     /*[235,232,247]*/
+    --border-color: #836AD1;        /*[131,106,209]*/
+
+}
+
+#create_subject_form_alert{
+    /*display:none;*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    z-index: 1;
+}
+
+#create_subject_form_frame{
+    max-width:600px;
+    margin:30px auto;
+    border: 1px solid rgb(131,106,209,0.4);
+    border-right-color: rgb(131,106,209,0.6);
+    border-bottom-color: rgb(131,106,209,0.6);
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px var(--background-color);
+    padding: 20px 30px 5px 30px;
+}
+
+h1{
+    color: var(--element-color);
+    font-family: Century Gothic; 
+    font-weight: bold;
+}
+
+small{
+    color: var(--element-color);
+    font-family: Century Gothic; 
+}
+
+#create_subject_form{
+    margin-top: 20px;
+}
+
+/* Input field styling*/
+#create_subject_form label{
+    color: var(--element-color);
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+#create_subject_form label:after{
+    content: " :";
+    color: var(--element-color);
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+
+#create_subject_form .col-md-4,#create_subject_form .col-sm-4{
+    text-align: right;
+}
+
+#create_subject_form .col-md-12,#create_subject_form .col-sm-12{
+  text-align: right;
+}
+
+#create_subject_form input, #create_subject_form button, #create_subject_form select{
+    color: var(--element-color);
+    font-family: Century Gothic;
+    border:  2px solid var(--border-color);
+    margin-bottom: 5px;
+}
+
+#create_subject_form input:hover, #create_subject_form button:hover,#create_subject_form select:hover{
+    background-color: rgb(203,192,235,0.4);;
+    border:  2px solid var(--border-color);
+}
+
+#create_subject_form input:focus, #create_subject_form button:focus,#create_subject_form select:focus{
+    box-shadow: none;
+}
+
+#create_subject_form input::placeholder  { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--element-color);
+    opacity: 1; /* Firefox */
+}
+
+#create_subject_form input:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+    color: var(--element-color);
+}
+
+#create_subject_form input::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--element-color);
+}
+
+
+
+

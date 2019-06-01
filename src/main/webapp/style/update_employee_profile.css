@@ -1,0 +1,96 @@
+:root{
+    --element-color:#8338D1;        /*[131,56,209]*/
+    --selection-color:#CBC0EB;      /*[203,192,235]*/
+    --background-color:#EBE8F7;     /*[235,232,247]*/
+    --border-color: #836AD1;        /*[131,106,209]*/
+
+}
+
+#employee_registration_form_alert{
+    /*display:none;*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    z-index: 1;
+}
+
+#update_employee_profile_form_frame{
+    max-width:600px;
+    margin:30px auto;
+    border: 1px solid rgb(131,106,209,0.4);
+    border-right-color: rgb(131,106,209,0.6);
+    border-bottom-color: rgb(131,106,209,0.6);
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px var(--background-color);
+    padding: 20px 30px 5px 30px;
+}
+
+h1{
+    color: var(--element-color);
+    font-family: Century Gothic; 
+    font-weight: bold;
+}
+
+small{
+    color: var(--element-color);
+    font-family: Century Gothic; 
+}
+
+#update_employee_profile_form{
+    margin-top: 20px;
+}
+/* Input field styling*/
+
+
+#update_employee_profile_form label{
+    color: var(--element-color);
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+#update_employee_profile_form label:after{
+    content: " :";
+    color: var(--element-color);
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+
+#update_employee_profile_form .col-md-4,#update_employee_profile_form .col-sm-4{
+    text-align: right;
+}
+
+#update_employee_profile_form .col-md-12,#update_employee_profile_form .col-sm-12{
+  text-align: right;
+}
+
+#update_employee_profile_form input, #update_employee_profile_form button{
+    color: var(--element-color);
+    font-family: Century Gothic;
+    border:  2px solid var(--border-color);
+    margin-bottom: 5px;
+}
+
+#update_employee_profile_form input:hover, #update_employee_profile_form button:hover{
+    background-color: rgb(203,192,235,0.4);;
+    border:  2px solid var(--border-color);
+}
+
+#update_employee_profile_form input:focus, #update_employee_profile_form button:focus{
+    box-shadow: none;
+}
+
+#update_employee_profile_form input::placeholder,#update_employee_profile_form textarea::placeholder  { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--element-color);
+    opacity: 1; /* Firefox */
+}
+
+#update_employee_profile_form input:-ms-input-placeholder,#update_employee_profile_form textarea:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+    color: var(--element-color);
+}
+
+#update_employee_profile_form input::-ms-input-placeholder ,#update_employee_profile_form textarea::-ms-input-placeholder{ /* Microsoft Edge */
+    color: var(--element-color);
+}
+
+
+
+
